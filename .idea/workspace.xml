@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbe08202-8df9-4182-932b-50968a2cbed5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/application/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+    <list default="true" id="cbe08202-8df9-4182-932b-50968a2cbed5" name="Changes" comment="application module">
+      <change afterPath="$PROJECT_DIR$/database-provider/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/application/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/com/madu/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/src/main/java/com/madu/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/repository/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/madu/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/com/madu/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/madu/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/com/madu/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/madu/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/application/src/main/java/com/madu/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,13 +43,13 @@
     &quot;last_opened_file_path&quot;: &quot;/home/madu/Developer/my-restaurant&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Main (1)">
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.madu.Main" />
       <module name="application" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.madu.*" />
+          <option name="PATTERN" value="com.madu.entity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -89,7 +86,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Docker.docker-compose.yml.app: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       </list>
@@ -104,6 +101,18 @@
       <option name="presentableId" value="Default" />
       <updated>1680469286340</updated>
     </task>
+    <task id="LOCAL-00001" summary="application module">
+      <created>1680472496618</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680472496618</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="application module" />
+    <option name="LAST_COMMIT_MESSAGE" value="application module" />
   </component>
 </project>

@@ -1,5 +1,6 @@
-package com.madu;
+package com.madu.repository;
 
+import com.madu.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

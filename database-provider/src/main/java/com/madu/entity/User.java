@@ -1,4 +1,4 @@
-package com.madu;
+package com.madu.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
