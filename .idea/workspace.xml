@@ -4,17 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbe08202-8df9-4182-932b-50968a2cbed5" name="Changes" comment="application module">
-      <change afterPath="$PROJECT_DIR$/database-provider/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/application/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/main/java/com/madu/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/src/main/java/com/madu/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="cbe08202-8df9-4182-932b-50968a2cbed5" name="Changes" comment="database-provider module">
+      <change afterPath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/entity/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/entity/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/entity/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/entity/OrderItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/entity/Payment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/repository/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/repository/ItemRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/repository/OrderItemRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/repository/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/repository/PaymentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/repository/UserRepository.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -108,11 +124,19 @@
       <option name="project" value="LOCAL" />
       <updated>1680472496618</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="database-provider module">
+      <created>1680473384295</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680473384295</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="application module" />
-    <option name="LAST_COMMIT_MESSAGE" value="application module" />
+    <MESSAGE value="database-provider module" />
+    <option name="LAST_COMMIT_MESSAGE" value="database-provider module" />
   </component>
 </project>
