@@ -4,20 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbe08202-8df9-4182-932b-50968a2cbed5" name="Changes" comment="database-provider module">
-      <change afterPath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/entity/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/entity/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/entity/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/entity/OrderItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/entity/Payment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/repository/CustomerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/repository/ItemRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/repository/OrderItemRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/repository/OrderRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/repository/PaymentRepository.java" afterDir="false" />
+    <list default="true" id="cbe08202-8df9-4182-932b-50968a2cbed5" name="Changes" comment="entities and repositories">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/madu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-service/src/main/resources/My-Restaurant.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/entity/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,14 +44,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/madu/Developer/my-restaurant&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "/home/madu/Developer/my-restaurant",
+    "settings.editor.selected.configurable": "proofread"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.madu.Main" />
@@ -131,12 +126,24 @@
       <option name="project" value="LOCAL" />
       <updated>1680473384295</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="entities and repositories">
+      <created>1680476029757</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1680476029757</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="application module" />
     <MESSAGE value="database-provider module" />
-    <option name="LAST_COMMIT_MESSAGE" value="database-provider module" />
+    <MESSAGE value="entities and repositories" />
+    <option name="LAST_COMMIT_MESSAGE" value="entities and repositories" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

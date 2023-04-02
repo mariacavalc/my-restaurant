@@ -1,0 +1,121 @@
+openapi: 3.0.0
+info:
+  title: Sistema de Gerenciamento de Pedidos de Restaurantes
+  version: 1.0.0
+paths:
+  /clientes:
+    get:
+      summary: Retorna a lista de todos os clientes
+      operationId: getClientes
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Cliente'
+    post:
+      summary: Adiciona um novo cliente
+      operationId: addCliente
+      requestBody:
+        description: Objeto cliente a ser adicionado
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Cliente'
+      responses:
+        '201':
+          description: Criado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Cliente'
+  /clientes/{id}:
+    get:
+      summary: Retorna um cliente pelo seu ID
+      operationId: getClienteById
+      parameters:
+        - name: id
+          in: path
+          description: ID do cliente a ser retornado
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Cliente'
+        '404':
+          description: Cliente não encontrado
+    put:
+      summary: Atualiza um cliente pelo seu ID
+      operationId: updateClienteById
+      parameters:
+        - name: id
+          in: path
+          description: ID do cliente a ser atualizado
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        description: Objeto cliente a ser atualizado
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Cliente'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Cliente'
+        '404':
+          description: Cliente não encontrado
+    delete:
+      summary: Remove um cliente pelo seu ID
+      operationId: deleteClienteById
+      parameters:
+        - name: id
+          in: path
+          description: ID do cliente a ser removido
+          required: true
+          schema:
+            type: integer
+      responses:
+        '204':
+          description: Sem conteúdo
+components:
+  schemas:
+    Cliente:
+      type: object
+      properties:
+        id:
+          type: integer
+        nome:
+          type: string
+        cpf:
+          type: string
+        email:
+          type: string
+        endereco:
+          type: string
+        dataNascimento:
+          type: string
+        telefone:
+          type: string
+      example:
+        id: 1
+        nome: João da Silva
+        cpf: 123.456.789-10
+        email: joao.silva@example.com
+        endereco: Rua das Flores, 1234
+        dataNascimento: 01/01/1980
+        telefone: (11) 98765-4321
