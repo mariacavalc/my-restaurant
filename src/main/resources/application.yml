@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/my-restaurant
+    username: root
+    password: r00t
+  jpa:
+    hibernate:
+      ddl-auto: create
