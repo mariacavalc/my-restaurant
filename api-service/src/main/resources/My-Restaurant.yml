@@ -92,72 +92,6 @@ paths:
       responses:
         '204':
           description: Sem conteúdo
-  /pedidos:
-    get:
-      summary: Lista todos os pedidos
-      responses:
-        '200':
-          description: OK
-    post:
-      summary: Cria um novo pedido
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Pedido'
-      responses:
-        '201':
-          description: Pedido criado com sucesso
-  /pedidos/{id}:
-    parameters:
-      - name: id
-        in: path
-        required: true
-        schema:
-          type: integer
-        description: ID do pedido
-    get:
-      summary: Retorna um pedido pelo ID
-      responses:
-        '200':
-          description: OK
-        '404':
-          description: Pedido não encontrado
-    put:
-      summary: Atualiza um pedido pelo ID
-      parameters:
-        - name: id
-          in: path
-          required: true
-          schema:
-            type: integer
-          description: ID do pedido
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Pedido'
-      responses:
-        '200':
-          description: Pedido atualizado com sucesso
-        '404':
-          description: Pedido não encontrado
-    delete:
-      summary: Deleta um pedido pelo ID
-      parameters:
-        - name: id
-          in: path
-          required: true
-          schema:
-            type: integer
-          description: ID do pedido
-      responses:
-        '204':
-          description: Pedido deletado com sucesso
-        '404':
-          description: Pedido não encontrado
 components:
   schemas:
     Cliente:
@@ -185,26 +119,3 @@ components:
         endereco: Rua das Flores, 1234
         dataNascimento: 01/01/1980
         telefone: (11) 98765-4321
-    Pedido:
-      type: object
-      properties:
-        id:
-          type: integer
-          description: ID do pedido
-        dataDeCriacao:
-          type: string
-          description: Data de criação do pedido
-        dataDeEncerramento:
-          type: string
-          description: Data de encerramento do pedido
-        clienteResponsavel:
-          $ref: '#/components/schemas/Cliente'
-        statusPedido:
-          type: string
-          description: Status do pedido
-        valorDesconto:
-          type: number
-          description: Valor do desconto aplicado ao pedido
-        valorTotal:
-          type: number
-          description: Valor total do pedido
