@@ -64,9 +64,12 @@
                         <configuration>
                             <inputSpec>${project.basedir}/src/main/resources/My-Restaurant.yml</inputSpec>
                             <generatorName>spring</generatorName>
+                            <generateApis>true</generateApis>
+                            <supportingFilesToGenerate>
+                                ApiUtil.java
+                            </supportingFilesToGenerate>
                             <configOptions>
-                                <interfaceOnly>true</interfaceOnly>
-                                <java8>true</java8>
+                                <delegatePattern>true</delegatePattern>
                             </configOptions>
                             <output>${project.build.directory}/generated-sources/openapi</output>
                         </configuration>
