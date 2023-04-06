@@ -25,7 +25,7 @@ public class Order {
 
     @ManyToOne
     @JoinColumn(name = "customer_id")
-    private Customer responsibleCustomer;
+    private CustomerEntity responsibleCustomer;
 
     private String orderStatus;
 

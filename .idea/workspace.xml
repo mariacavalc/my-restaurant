@@ -4,9 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbe08202-8df9-4182-932b-50968a2cbed5" name="Changes" comment="adding api tags">
-      <change afterPath="$PROJECT_DIR$/api-service/src/main/java/com/madu/controller/ClienteController.java" afterDir="false" />
+    <list default="true" id="cbe08202-8df9-4182-932b-50968a2cbed5" name="Changes" comment="ClienteController">
+      <change afterPath="$PROJECT_DIR$/api-service/src/main/java/com/madu/adapter/CustomerAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-service/src/main/java/com/madu/mapper/CustomerMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/adapter/CustomerDatabaseAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/mapper/CustomerDatabaseMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/madu/dto/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/madu/port/CustomerDatabase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/madu/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-service/src/main/java/com/madu/controller/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-service/src/main/java/com/madu/controller/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/database-provider/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/entity/CustomerEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/entity/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/repository/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +31,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -167,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680753411224</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="ClienteController">
+      <created>1680754733663</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1680754733663</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -179,7 +201,8 @@
     <MESSAGE value="removing pedido endpoint" />
     <MESSAGE value="adding openapi configs" />
     <MESSAGE value="adding api tags" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding api tags" />
+    <MESSAGE value="ClienteController" />
+    <option name="LAST_COMMIT_MESSAGE" value="ClienteController" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
