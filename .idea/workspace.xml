@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbe08202-8df9-4182-932b-50968a2cbed5" name="Changes" comment="adding openapi configs" />
+    <list default="true" id="cbe08202-8df9-4182-932b-50968a2cbed5" name="Changes" comment="adding api tags">
+      <change afterPath="$PROJECT_DIR$/api-service/src/main/java/com/madu/controller/ClienteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -157,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680752961960</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="adding api tags">
+      <created>1680753411224</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1680753411224</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -168,7 +178,8 @@
     <MESSAGE value="orders endpoint" />
     <MESSAGE value="removing pedido endpoint" />
     <MESSAGE value="adding openapi configs" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding openapi configs" />
+    <MESSAGE value="adding api tags" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding api tags" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
