@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbe08202-8df9-4182-932b-50968a2cbed5" name="Changes" comment="removing pedido endpoint">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-service/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="cbe08202-8df9-4182-932b-50968a2cbed5" name="Changes" comment="adding openapi configs" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -153,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680738939040</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="adding openapi configs">
+      <created>1680752961960</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1680752961960</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -163,7 +167,8 @@
     <MESSAGE value="clients endpoint" />
     <MESSAGE value="orders endpoint" />
     <MESSAGE value="removing pedido endpoint" />
-    <option name="LAST_COMMIT_MESSAGE" value="removing pedido endpoint" />
+    <MESSAGE value="adding openapi configs" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding openapi configs" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

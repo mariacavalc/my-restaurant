@@ -5,6 +5,8 @@ info:
 paths:
   /clientes:
     get:
+      tags:
+        - Cliente
       summary: Retorna a lista de todos os clientes
       operationId: getClientes
       responses:
@@ -17,6 +19,8 @@ paths:
                 items:
                   $ref: '#/components/schemas/Cliente'
     post:
+      tags:
+        - Cliente
       summary: Adiciona um novo cliente
       operationId: addCliente
       requestBody:
@@ -35,6 +39,8 @@ paths:
                 $ref: '#/components/schemas/Cliente'
   /clientes/{id}:
     get:
+      tags:
+        - Cliente
       summary: Retorna um cliente pelo seu ID
       operationId: getClienteById
       parameters:
@@ -54,6 +60,8 @@ paths:
         '404':
           description: Cliente não encontrado
     put:
+      tags:
+        - Cliente
       summary: Atualiza um cliente pelo seu ID
       operationId: updateClienteById
       parameters:
@@ -80,6 +88,8 @@ paths:
         '404':
           description: Cliente não encontrado
     delete:
+      tags:
+        - Cliente
       summary: Remove um cliente pelo seu ID
       operationId: deleteClienteById
       parameters:
