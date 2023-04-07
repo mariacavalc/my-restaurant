@@ -6,7 +6,9 @@ import com.madu.mapper.CustomerDatabaseMapper;
 import com.madu.port.CustomerDatabase;
 import com.madu.repository.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class CustomerDatabaseAdapter implements CustomerDatabase {
 
     @Autowired

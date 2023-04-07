@@ -17,7 +17,7 @@ paths:
               schema:
                 type: array
                 items:
-                  $ref: '#/components/schemas/Cliente'
+                  $ref: '#/components/schemas/ClienteInfo'
     post:
       tags:
         - Cliente
@@ -36,7 +36,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Cliente'
+                $ref: '#/components/schemas/ClienteInfo'
   /clientes/{id}:
     get:
       tags:
@@ -56,7 +56,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Cliente'
+                $ref: '#/components/schemas/ClienteInfo'
         '404':
           description: Cliente não encontrado
     put:
@@ -84,7 +84,7 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Cliente'
+                $ref: '#/components/schemas/ClienteInfo'
         '404':
           description: Cliente não encontrado
     delete:
@@ -104,28 +104,65 @@ paths:
           description: Sem conteúdo
 components:
   schemas:
-    Cliente:
+
+    ClienteInfo:
       type: object
       properties:
         id:
-          type: integer
+          $ref: '#/components/schemas/id'
         nome:
-          type: string
+          $ref: '#/components/schemas/nome'
         cpf:
-          type: string
+          $ref: '#/components/schemas/cpf'
         email:
-          type: string
+          $ref: '#/components/schemas/email'
         endereco:
-          type: string
+          $ref: '#/components/schemas/endereco'
         dataNascimento:
-          type: string
+          $ref: '#/components/schemas/dataNascimento'
         telefone:
-          type: string
-      example:
-        id: 1
-        nome: João da Silva
-        cpf: 123.456.789-10
-        email: joao.silva@example.com
-        endereco: Rua das Flores, 1234
-        dataNascimento: 01/01/1980
-        telefone: (11) 98765-4321
+          $ref: '#/components/schemas/telefone'
+
+    Cliente:
+      type: object
+      properties:
+        nome:
+          $ref: '#/components/schemas/nome'
+        cpf:
+          $ref: '#/components/schemas/cpf'
+        email:
+          $ref: '#/components/schemas/email'
+        endereco:
+          $ref: '#/components/schemas/endereco'
+        dataNascimento:
+          $ref: '#/components/schemas/dataNascimento'
+        telefone:
+          $ref: '#/components/schemas/telefone'
+
+    id:
+      example: 1
+      type: integer
+
+    nome:
+      example: João da Silva
+      type: string
+
+    cpf:
+      example: 123.456.789-10
+      type: string
+
+    email:
+      example: joao.silva@example.com
+      type: string
+
+    endereco:
+      example: Rua das Flores, 1234
+      type: string
+
+    dataNascimento:
+      example: 01/01/1980
+      type: string
+
+    telefone:
+      type: string
+      example: (11) 98765-4321

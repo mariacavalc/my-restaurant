@@ -20,6 +20,11 @@
     <dependencies>
         <dependency>
             <groupId>com.madu</groupId>
+            <artifactId>database-provider</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.madu</groupId>
             <artifactId>domain</artifactId>
             <version>${project.version}</version>
         </dependency>
@@ -77,7 +82,13 @@
                                 ApiUtil.java
                             </supportingFilesToGenerate>
                             <configOptions>
-                                <delegatePattern>true</delegatePattern>
+                                <interfaceOnly>true</interfaceOnly>
+                                <serializableModel>true</serializableModel>
+                                <skipDefaultInterface>true</skipDefaultInterface>
+                                <hideGenerationTimestamp>true</hideGenerationTimestamp>
+                                <useOptional>false</useOptional>
+                                <skipDefaultInterface>true</skipDefaultInterface>
+                                <useSpringController>true</useSpringController>
                             </configOptions>
                             <output>${project.build.directory}/generated-sources/openapi</output>
                         </configuration>

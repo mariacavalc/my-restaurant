@@ -1,8 +1,9 @@
 package com.madu.controller;
 
 import com.madu.adapter.CustomerAdapter;
-import org.openapitools.api.ClientesApiDelegate;
+import org.openapitools.api.ClientesApi;
 import org.openapitools.model.Cliente;
+import org.openapitools.model.ClienteInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -11,13 +12,13 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 @Component
-public class ClientController implements ClientesApiDelegate {
+public class ClientController implements ClientesApi {
 
     @Autowired
     private CustomerAdapter clientAdapter;
 
     @Override
-    public ResponseEntity<Cliente> addCliente(Cliente cliente) {
+    public ResponseEntity<ClienteInfo> addCliente(Cliente cliente) {
         return new ResponseEntity<>(clientAdapter.addCustomer(cliente), HttpStatus.CREATED);
     }
 
@@ -27,17 +28,17 @@ public class ClientController implements ClientesApiDelegate {
     }
 
     @Override
-    public ResponseEntity<Cliente> getClienteById(Integer id) {
+    public ResponseEntity<ClienteInfo> getClienteById(Integer id) {
         return null;
     }
 
     @Override
-    public ResponseEntity<List<Cliente>> getClientes() {
+    public ResponseEntity<List<ClienteInfo>> getClientes() {
         return null;
     }
 
     @Override
-    public ResponseEntity<Cliente> updateClienteById(Integer id, Cliente cliente) {
+    public ResponseEntity<ClienteInfo> updateClienteById(Integer id, Cliente cliente) {
         return null;
     }
 }

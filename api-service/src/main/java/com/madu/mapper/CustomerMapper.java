@@ -4,6 +4,7 @@ import com.madu.dto.Customer;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.openapitools.model.Cliente;
+import org.openapitools.model.ClienteInfo;
 
 @Mapper(componentModel = "spring")
 public interface CustomerMapper {
@@ -18,5 +19,5 @@ public interface CustomerMapper {
     @Mapping(target = "endereco", source = "address")
     @Mapping(target = "dataNascimento", source = "dateOfBirth")
     @Mapping(target = "telefone", source = "phone")
-    Cliente fromDTO(Customer customer);
+    ClienteInfo fromDTO(Customer customer);
 }

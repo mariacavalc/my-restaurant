@@ -23,6 +23,16 @@
             <artifactId>database-provider</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.madu</groupId>
+            <artifactId>api-service</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.madu</groupId>
+            <artifactId>domain</artifactId>
+            <version>${project.version}</version>
+        </dependency>
     </dependencies>
 
 </project>

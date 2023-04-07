@@ -4,6 +4,7 @@ import com.madu.dto.Customer;
 import com.madu.mapper.CustomerMapper;
 import com.madu.service.CustomerService;
 import org.openapitools.model.Cliente;
+import org.openapitools.model.ClienteInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -16,7 +17,7 @@ public class CustomerAdapter {
     @Autowired
     private CustomerService customerService;
 
-    public Cliente addCustomer(Cliente cliente) {
+    public ClienteInfo addCustomer(Cliente cliente) {
         Customer customer = customerMapper.toDTO(cliente);
         return customerMapper.fromDTO(customerService.addCustomer(customer));
     }
