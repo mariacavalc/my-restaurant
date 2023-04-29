@@ -37,6 +37,12 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ClienteInfo'
+        '400':
+          description: BadRequest
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BadRequest'
   /clientes/{id}:
     get:
       tags:
@@ -138,6 +144,20 @@ components:
           $ref: '#/components/schemas/dataNascimento'
         telefone:
           $ref: '#/components/schemas/telefone'
+      required:
+        - nome
+        - cpf
+        - email
+        - endereco
+        - dataNascimento
+        - telefone
+
+    BadRequest:
+      type: object
+      properties:
+        message:
+          type: string
+          example: CPF não tem um formato válido
 
     id:
       example: 1
@@ -161,6 +181,7 @@ components:
 
     dataNascimento:
       example: 01/01/1980
+      format: date
       type: string
 
     telefone:

@@ -8,6 +8,8 @@ import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.time.LocalDate;
+
 @Entity
 @Table(name = "customer")
 @Getter @Setter
@@ -25,7 +27,7 @@ public class CustomerEntity {
 
     private String address;
 
-    private String dateOfBirth;
+    private LocalDate dateOfBirth;
 
     private String phone;
 

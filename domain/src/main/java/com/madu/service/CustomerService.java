@@ -11,8 +11,17 @@ public class CustomerService {
     @Autowired
     private CustomerDatabase customerDatabase;
 
+    @Autowired
+    private ValidatorService validatorService;
+
     public Customer addCustomer(Customer customer) {
-        //TODO: Email, cpf, date of brith and phone validation
+        isValidCustomer(customer);
         return customerDatabase.addCustomer(customer);
+    }
+
+    private void isValidCustomer(Customer customer) {
+        validatorService.isCPFValid(customer.getCpf());
+        validatorService.isPhoneValid(customer.getPhone());
+        validatorService.isEmailValid(customer.getEmail());
     }
 }
