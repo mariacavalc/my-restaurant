@@ -108,6 +108,32 @@ paths:
       responses:
         '204':
           description: Sem conteúdo
+  /item:
+    post:
+      tags:
+        - Item
+      summary: Adiciona um novo item
+      operationId: addItem
+      requestBody:
+        description: Objeto item a ser adicionado
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Item'
+      responses:
+        '201':
+          description: Criado
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ItemInfo'
+        '400':
+          description: BadRequest
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BadRequest'
 components:
   schemas:
 
@@ -152,6 +178,32 @@ components:
         - dataNascimento
         - telefone
 
+    ItemInfo:
+      type: object
+      properties:
+        id:
+          $ref: '#/components/schemas/id'
+        nome:
+          $ref: '#/components/schemas/nome'
+        descricao:
+          $ref: '#/components/schemas/descricao'
+        ingredientes:
+          $ref: '#/components/schemas/ingredientes'
+
+    Item:
+      type: object
+      properties:
+        nome:
+          $ref: '#/components/schemas/nome'
+        descricao:
+          $ref: '#/components/schemas/descricao'
+        ingredientes:
+          $ref: '#/components/schemas/ingredientes'
+      required:
+        - nome
+        - descricao
+        - ingredientes
+
     BadRequest:
       type: object
       properties:
@@ -187,3 +239,11 @@ components:
     telefone:
       type: string
       example: (11) 98765-4321
+
+    descricao:
+      type: string
+      example: Prato composto por dois pedaços de carne com arroz
+
+    ingredientes:
+      type: string
+      example: 150g de filé e 150g de arroz branco

@@ -1,6 +1,6 @@
 package com.madu.mapper;
 
-import com.madu.dto.Customer;
+import com.madu.dto.CustomerDTO;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.openapitools.model.Cliente;
@@ -13,11 +13,11 @@ public interface CustomerMapper {
     @Mapping(source = "endereco", target = "address")
     @Mapping(source = "dataNascimento", target = "dateOfBirth")
     @Mapping(source = "telefone", target = "phone")
-    Customer toDTO(Cliente cliente);
+    CustomerDTO toDTO(Cliente cliente);
 
     @Mapping(target = "nome", source = "name")
     @Mapping(target = "endereco", source = "address")
     @Mapping(target = "dataNascimento", source = "dateOfBirth")
     @Mapping(target = "telefone", source = "phone")
-    ClienteInfo fromDTO(Customer customer);
+    ClienteInfo fromDTO(CustomerDTO customer);
 }

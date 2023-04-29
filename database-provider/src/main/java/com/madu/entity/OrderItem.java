@@ -22,7 +22,7 @@ public class OrderItem {
 
     @ManyToOne
     @JoinColumn(name = "item_id")
-    private Item item;
+    private ItemEntity itemEntity;
 
     @ManyToOne
     @JoinColumn(name = "order_id")

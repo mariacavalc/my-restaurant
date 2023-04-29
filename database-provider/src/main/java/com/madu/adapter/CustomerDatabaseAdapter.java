@@ -1,6 +1,6 @@
 package com.madu.adapter;
 
-import com.madu.dto.Customer;
+import com.madu.dto.CustomerDTO;
 import com.madu.entity.CustomerEntity;
 import com.madu.mapper.CustomerDatabaseMapper;
 import com.madu.port.CustomerDatabase;
@@ -18,7 +18,7 @@ public class CustomerDatabaseAdapter implements CustomerDatabase {
     private CustomerDatabaseMapper customerMapper;
 
     @Override
-    public Customer addCustomer(Customer customer) {
+    public CustomerDTO addCustomer(CustomerDTO customer) {
         CustomerEntity entity = customerMapper.fromDTO(customer);
         return customerMapper.toDTO(customerRepository.saveAndFlush(entity));
     }

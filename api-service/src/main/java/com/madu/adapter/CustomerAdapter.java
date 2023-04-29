@@ -1,6 +1,6 @@
 package com.madu.adapter;
 
-import com.madu.dto.Customer;
+import com.madu.dto.CustomerDTO;
 import com.madu.mapper.CustomerMapper;
 import com.madu.service.CustomerService;
 import org.openapitools.model.Cliente;
@@ -18,7 +18,7 @@ public class CustomerAdapter {
     private CustomerService customerService;
 
     public ClienteInfo addCustomer(Cliente cliente) {
-        Customer customer = customerMapper.toDTO(cliente);
-        return customerMapper.fromDTO(customerService.addCustomer(customer));
+        CustomerDTO customerDTO = customerMapper.toDTO(cliente);
+        return customerMapper.fromDTO(customerService.addCustomer(customerDTO));
     }
 }

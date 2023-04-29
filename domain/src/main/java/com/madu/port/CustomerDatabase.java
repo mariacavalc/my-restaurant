@@ -1,8 +1,8 @@
 package com.madu.port;
 
-import com.madu.dto.Customer;
+import com.madu.dto.CustomerDTO;
 
 public interface CustomerDatabase {
 
-    Customer addCustomer(Customer customer);
+    CustomerDTO addCustomer(CustomerDTO customer);
 }

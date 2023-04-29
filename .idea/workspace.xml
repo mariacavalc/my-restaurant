@@ -4,16 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbe08202-8df9-4182-932b-50968a2cbed5" name="Changes" comment="fixing mapping with lombok and request and response bodies">
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/madu/exception/BadRequestException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/madu/service/ValidatorService.java" afterDir="false" />
+    <list default="true" id="cbe08202-8df9-4182-932b-50968a2cbed5" name="Changes" comment="adding validation for request fields">
+      <change afterPath="$PROJECT_DIR$/api-service/src/main/java/com/madu/adapter/ItemAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-service/src/main/java/com/madu/controller/ItemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-service/src/main/java/com/madu/mapper/ItemMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/adapter/ItemDatabaseAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/mapper/ItemDatabaseMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/madu/dto/ItemDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/madu/port/ItemDatabase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/madu/service/ItemService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-service/src/main/java/com/madu/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-service/src/main/java/com/madu/controller/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-service/src/main/java/com/madu/adapter/CustomerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-service/src/main/java/com/madu/adapter/CustomerAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-service/src/main/java/com/madu/mapper/CustomerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-service/src/main/java/com/madu/mapper/CustomerMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-service/src/main/resources/My-Restaurant.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-service/src/main/resources/My-Restaurant.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/entity/CustomerEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/entity/CustomerEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/madu/dto/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/madu/dto/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/adapter/CustomerDatabaseAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/adapter/CustomerDatabaseAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/entity/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/entity/ItemEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/entity/OrderItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/entity/OrderItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/mapper/CustomerDatabaseMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/mapper/CustomerDatabaseMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/repository/ItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/repository/ItemRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/madu/dto/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/madu/dto/CustomerDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/madu/port/CustomerDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/madu/port/CustomerDatabase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/madu/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/madu/service/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,19 +51,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/madu/Developer/my-restaurant&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_directory_selection": "/home/madu/Developer/my-restaurant/database-provider/src/main/java/com/madu/adapter",
+    "last_opened_file_path": "/home/madu/Developer/my-restaurant",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "proofread"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.madu.adapter" />
+      <recent name="com.madu.service" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.madu.Main" />
@@ -188,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680898532325</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="adding validation for request fields">
+      <created>1682797653566</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1682797653566</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -203,18 +228,8 @@
     <MESSAGE value="ClienteController" />
     <MESSAGE value="addCustomer" />
     <MESSAGE value="fixing mapping with lombok and request and response bodies" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing mapping with lombok and request and response bodies" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/database-provider/src/main/java/com/madu/adapter/CustomerDatabaseAdapter.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="adding validation for request fields" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding validation for request fields" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
