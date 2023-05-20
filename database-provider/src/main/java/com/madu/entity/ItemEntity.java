@@ -9,6 +9,8 @@ import jakarta.persistence.Table;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.math.BigDecimal;
+
 @Entity
 @Table(name = "item")
 @Getter @Setter
@@ -23,7 +25,8 @@ public class ItemEntity {
 
     private String description;
 
-    private String ingredients;
+    private String type;
 
+    private BigDecimal price;
 }
 

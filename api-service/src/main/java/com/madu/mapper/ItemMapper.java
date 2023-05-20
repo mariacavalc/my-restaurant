@@ -11,11 +11,13 @@ public interface ItemMapper {
 
     @Mapping(source = "nome", target = "name")
     @Mapping(source = "descricao", target = "description")
-    @Mapping(source = "ingredientes", target = "ingredients")
+    @Mapping(source = "tipo", target = "type")
+    @Mapping(source = "valor", target = "price")
     ItemDTO toDTO(Item item);
 
     @Mapping(target = "nome", source = "name")
     @Mapping(target = "descricao", source = "description")
-    @Mapping(target = "ingredientes", source = "ingredients")
+    @Mapping(target = "tipo", source = "type")
+    @Mapping(target = "valor", source = "price")
     ItemInfo fromDTO(ItemDTO itemDTO);
 }

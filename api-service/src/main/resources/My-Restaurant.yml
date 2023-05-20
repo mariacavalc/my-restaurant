@@ -187,8 +187,10 @@ components:
           $ref: '#/components/schemas/nome'
         descricao:
           $ref: '#/components/schemas/descricao'
-        ingredientes:
-          $ref: '#/components/schemas/ingredientes'
+        tipo:
+          $ref: '#/components/schemas/tipo'
+        valor:
+          $ref: '#/components/schemas/valor'
 
     Item:
       type: object
@@ -197,12 +199,14 @@ components:
           $ref: '#/components/schemas/nome'
         descricao:
           $ref: '#/components/schemas/descricao'
-        ingredientes:
-          $ref: '#/components/schemas/ingredientes'
+        tipo:
+          $ref: '#/components/schemas/tipo'
+        valor:
+          $ref: '#/components/schemas/valor'
       required:
         - nome
         - descricao
-        - ingredientes
+        - tipo
 
     BadRequest:
       type: object
@@ -244,6 +248,11 @@ components:
       type: string
       example: Prato composto por dois pedaços de carne com arroz
 
-    ingredientes:
+    tipo:
       type: string
-      example: 150g de filé e 150g de arroz branco
+      example: Comida
+
+    valor:
+      type: number
+      format: double
+      example: 99.00
