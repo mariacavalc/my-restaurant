@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cbe08202-8df9-4182-932b-50968a2cbed5" name="Changes" comment="adding validation for request fields">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/adapter/ItemDatabaseAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/adapter/ItemDatabaseAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/repository/ItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/database-provider/src/main/java/com/madu/repository/ItemRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/madu/port/ItemDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/madu/port/ItemDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/madu/service/ItemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/madu/service/ItemService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-service/src/main/java/com/madu/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-service/src/main/java/com/madu/controller/ClientController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,6 +212,17 @@
     <MESSAGE value="fixing mapping with lombok and request and response bodies" />
     <MESSAGE value="adding validation for request fields" />
     <option name="LAST_COMMIT_MESSAGE" value="adding validation for request fields" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/domain/src/main/java/com/madu/service/CustomerService.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
